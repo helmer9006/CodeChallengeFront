@@ -7,10 +7,10 @@ const initialState = {
   error: null,
 };
 
-function useRequest(endpoint) {
+ function useRequest(endpoint) {
   const [requestData, setRequestData] = useState(initialState);
-  useEffect(() => {
-    axios
+  useEffect(async() => {
+    await axios
       .get(`https://opentdb.com/api.php?${endpoint}`)
       .then((response) => {
         console.log(response.data);

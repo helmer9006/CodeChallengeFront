@@ -21,7 +21,7 @@ code {
 
 .abs-center {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   min-height: 100vh;
 }
